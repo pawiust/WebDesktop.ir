@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html {
+    height: 100%;
+}
+body {
+    background : #000 url('../images/tile.jpg')  ;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+body img{
+    border:none;
+}
+.topContainer{
+    width:100%;
+    margin-top: 10px;
+    position: relative;
+    height: 50px;
+    top:0;
+    background: url('../images/logo_top.png') no-repeat 0;
+}
+
+#loginPage{
+    margin:  auto;
+
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background: url('../images/nature.jpg') no-repeat ;
+    background-size: 100% ;
+
+    overflow: hidden;
+    border-top: 2px solid graytext;
+}
+#formContainer{
+    float:right;
+    width:288px;
+    height:160px;
+    background: url('../images/tile.jpg');
+    background: rgba(0, 0, 0, 0.8);;
+    position:relative;
+    z-index:1;
+    margin-top: 100px;
+    margin-right: 70px;
+    -moz-border-radius: 8px; /* for Firefox */
+    -webkit-border-radius: 8px; /* for Webkit-Browsers */
+    border-radius: 8px; /* regular */
+
+    border: 2px solid graytext;
+
+}
+
+#formContainer form{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+
+
+    z-index:100;
+
+}
+
+
+#formContainer input{
+    font: 15px 'Segoe UI',Arial,sans-serif;
+    color: white;
+    border: none;
+    background: #fff;
+    position: absolute;
+    color:#111;
+    outline:none;
+    left: 26px;
+    -moz-border-radius: 5px; /* for Firefox */
+    -webkit-border-radius: 5px; /* for Webkit-Browsers */
+    border-radius: 5px; /* regular */
+}
+
+#btnLogin{
+
+    /* Submit button */
+
+    opacity:0.9;
+    position:absolute;
+
+    top:112px;
+    left:26px;
+    width: 239px;
+    height:36px;
+    cursor:pointer;
+    border-radius:6px;
+
+    border:none;
+    color:#adff2f;
+    font:16px/36px 'Segoe UI Light','Segoe UI',Arial,sans-serif;
+    font-weight: bolder;
+
+}
+#formContainer label{
+    font: 15px 'Segoe UI',Arial,sans-serif;
+    color: white;
+    border: none;
+    position: absolute;
+
+    outline:none;
+    left: 46px;
+    top:92px;
+}
+input[type=text],input[type=password]{
+    /* The text fields */
+    top:12px;
+    height: 36px;
+
+
+    width: 234px;
+    text-indent: 8px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+#remember{
+    top:92px;
+}
+#loginPass{
+    top: 52px;
+}
+.itemDiv {
+    background-color: #ffaf0f;
+
+
+
+
+    -moz-border-radius: 10px; /* for Firefox */
+    -webkit-border-radius: 10px; /* for Webkit-Browsers */
+    border-radius: 10px; /* regular */
+    padding: 5px;
+    padding-top: 15px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #000000;
+
+
+}
+.moveicon{
+    float: left;
+
+}
+.drag_handle {
+    /*background: url(../images/move2red.png) no-repeat;*/
+    position:absolute;
+    top:-15px;left: -15px;
+    height:30px;
+    display: none;
+    overflow: hidden;
+
+}
+.showhandle {
+    display: block;
+    cursor:move;
+}
+
+.item {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    outline:none;
+    font-size: 24px;
+
+    overflow-y: auto;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;
+
+}
+.itemHidden {
+    width: 100%;
+    height: 30px;
+    display: none;
+    background: #8b4513;
+    border: none;
+
+}
+
+#container {
+
+   /* padding: 20px;
+
+
+
+
+*/
+    margin:0;
+    position: fixed;
+    height: 100%;
+    width:100%;
+    border: 1px solid silver;
+    padding: 16px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 5px 1px #fff;
+    -moz-box-shadow: 0px 0px 5px 1px #fff;
+    box-shadow: 0px 0px 5px 1px #fff;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#000000');
+}
+#toolbar{
+position: absolute;
+    width: 70px;
+
+    display: block;
+    height: 500px;
+    background: #000;
+   left:5px;
+    overflow: hidden;
+
+
+}
+#toolbar img{
+    float: left;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    border:none;
+}
+#notepad{
+    width: 700px;
+    height:  500px;
+    margin: auto;
+    display: none;
+}

@@ -1,0 +1,8 @@
+<Directory "/home/www/html">
+    RewriteEngine On
+    Options +FollowSymlinks
+    RewriteBase /
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ /index.php?user=$1 [R]
+</Directory>
