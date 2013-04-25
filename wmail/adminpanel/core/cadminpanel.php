@@ -144,7 +144,7 @@ class CAdminPanel
 			}
 		}
 
-		defined('AP_INDEX_FILE') || define('AP_INDEX_FILE', 'index.php');
+		defined('AP_INDEX_FILE') || define('AP_INDEX_FILE', 'login.php');
 
 		$this->bSessionIsStarted = self::initInclude();
 
@@ -640,7 +640,7 @@ class CAdminPanel
 				$bIsMailSuite = (bool) CApi::GetConf('mailsuite', false);
 				while (false !== ($sFile = readdir($rDirHandle)))
 				{
-					if ('.' !== $sFile{0} && @file_exists($sModulePath.$sFile.'/index.php'))
+					if ('.' !== $sFile{0} && @file_exists($sModulePath.$sFile.'/login.php'))
 					{
 						if (!$bIsMailSuite && 'bundle' === $sFile)
 						{
@@ -650,7 +650,7 @@ class CAdminPanel
 						$bDisabled = false;
 						$iSortIndex = null;
 						$sCurrentModule = null;
-						include $sModulePath.$sFile.'/index.php';
+						include $sModulePath.$sFile.'/login.php';
 
 						if (!$bDisabled && null !== $sCurrentModule && null !== $iSortIndex && class_exists($sCurrentModule))
 						{

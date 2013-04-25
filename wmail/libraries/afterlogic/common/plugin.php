@@ -64,9 +64,9 @@ class CApiPluginManager
 						if ('.' !== $sFile{0} && preg_match('/^[a-z0-9\-]+$/', $sFile) &&
 							(CApi::GetConf('plugins.config.include-all', false) ||
 								CApi::GetConf('plugins.'.$sFile, false)) &&
-							@file_exists($sPluginsPath.$sFile.'/index.php'))
+							@file_exists($sPluginsPath.$sFile.'/login.php'))
 						{
-							$oPlugin = include $sPluginsPath.$sFile.'/index.php';
+							$oPlugin = include $sPluginsPath.$sFile.'/login.php';
 							if ($oPlugin instanceof AApiPlugin)
 							{
 								$oPlugin->SetName($sFile);

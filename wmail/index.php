@@ -325,7 +325,7 @@
 		var ActionUrl = "processing.php";
 		var EmptyHtmlUrl = "empty.html";
 		var LanguageUrl = "langs.js.php";
-		var LoginUrl = "index.php";
+		var LoginUrl = "login.php";
 		var WebMailUrl = "webmail.php";
 
 		var DefLang = "<?php echo ConvertUtils::ClearJavaScriptString(defaultLanguage, '"'); ?>";

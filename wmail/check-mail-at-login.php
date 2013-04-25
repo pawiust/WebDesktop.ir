@@ -13,7 +13,7 @@
 
 	if (!isset($oAccount))
 	{
-		CApi::Location('index.php?error=2');
+		CApi::Location('login.php?error=2');
 		exit();
 	}
 
@@ -43,7 +43,7 @@ if (is_array($aLoadScripts) && 0 < count($aLoadScripts))
 	<script type="text/javascript">
 		var checkMail;
 		var WebMailUrl = '<?php echo G_WEBMAILURL; ?>';
-		var LoginUrl = 'index.php';
+		var LoginUrl = 'login.php';
 		var CheckMailUrl = 'check-mail.php';
 		var EmptyHtmlUrl = 'empty.html';
 		var Browser = new CBrowser();

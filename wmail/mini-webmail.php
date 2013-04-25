@@ -22,7 +22,7 @@
 
 	if (null === $iAccountId && !$bHasError)
 	{
-		header('Location: index.php?error=1');
+		header('Location: login.php?error=1');
 		exit();
 	}
 
@@ -49,7 +49,7 @@
 		}
 		else
 		{
-			header('Location: index.php?error=2');
+			header('Location: login.php?error=2');
 			exit();
 		}
 	}
@@ -58,7 +58,7 @@
 	$oAccount = AppGetAccount($iAccountId);
 	if (!$oAccount)
 	{
-		header('Location: index.php?error=2');
+		header('Location: login.php?error=2');
 		exit();
 	}
 
@@ -343,7 +343,7 @@
 		var ReplyType = "<?php echo ConvertUtils::ClearJavaScriptString($replyType, '"'); ?>";
 		var ReplyText = "<?php echo ConvertUtils::ReBuildStringToJavaScript($replyText, '"'); ?>";
 		var ActionUrl = 'processing.php';
-		var LoginUrl = 'index.php';
+		var LoginUrl = 'login.php';
 		var EmptyHtmlUrl = 'empty.html';
 		var Browser;
 		var PreviewPane, NewMessageScreen;

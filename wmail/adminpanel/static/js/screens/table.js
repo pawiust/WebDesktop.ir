@@ -223,7 +223,7 @@ function SwitcherTabHandler()
 }
 
 function PageSwitcherPager(page) {
-	document.location = "index.php?page=" + page;
+	document.location = "login.php?page=" + page;
 }
 
 function ViewAddressRecord(id) {

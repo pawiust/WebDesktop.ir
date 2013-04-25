@@ -41,7 +41,7 @@
 
 	if (false === $iAccountId)
 	{
-		CApi::Location('index.php');
+		CApi::Location('login.php');
 		exit();
 	}
 
@@ -49,7 +49,7 @@
 	$oAccount = AppGetAccount($iAccountId);
 	if (!$oAccount)
 	{
-		CApi::Location('index.php?error=2');
+		CApi::Location('login.php?error=2');
 		exit();
 	}
 
@@ -174,7 +174,7 @@
 	var ImageUploaderUrl = 'fileuploader.php';
 	var ImportUrl = 'import.php';
 	var LanguageUrl = 'langs.js.php';
-	var LoginUrl = 'index.php';
+	var LoginUrl = 'login.php';
 	var MiniWebMailUrl = 'mini-webmail.php';
 	var SessionSaverUrl = 'session-saver.php';
 	var WebMailUrl = 'webmail.php<?php echo (false !== $oInput->GetQuery('iframe', false)) ? '?iframe' : ''; ?>';
